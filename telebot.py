@@ -6,6 +6,7 @@ from secrets import TOKEN
 from parser import checkPresent
 
 message = "Кто присутствовал?"
+callback_value = []
 
 with open("table.json", encoding='utf-8') as f:
     ID_TABLE = json.load(f)
@@ -50,6 +51,7 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     if int(query.data) == 1 and name not in query_text:
+        callback_value.append(1)
         name_sorting = sorted([name] + query_text[2:])
         people = str(len(name_sorting))
 
@@ -57,6 +59,7 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         await query.edit_message_text(text=f"{query_text}", reply_markup=reply_markup)
 
     elif int(query.data) == 4 and name not in query_text:
+        callback_value.append(4)
         name_sorting = sorted([name] + query_text[2:])
         people = str(len(name_sorting))
 
@@ -75,12 +78,12 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     elif int(query.data) == 3:
         if user_id == ID_TABLE["admin"]:
             names = query_text[2:]
-            calbakc_value = int(query.data)
             query_text = "\n".join(query_text)
             await query.edit_message_text(text=f"{query_text}")
 
             with open("present_names.json", "w", encoding="utf-8") as f:
-                json.dump([names, calbakc_value], f, ensure_ascii=False, indent=4)
+                for count_value in range(len(names)):
+                    json.dump([names[count_value], callback_value[count_value]], f, ensure_ascii=False, indent=4)
 
             checkPresent()
 
