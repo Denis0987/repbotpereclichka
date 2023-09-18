@@ -56,6 +56,13 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         query_text = "\n".join([f"{message} ({people})\n"] + name_sorting)
         await query.edit_message_text(text=f"{query_text}", reply_markup=reply_markup)
 
+    elif int(query.data) == 4 and name not in query_text:
+        name_sorting = sorted([name] + query_text[2:])
+        people = str(len(name_sorting))
+
+        query_text = "\n".join([f"{message} ({people})\n"] + name_sorting)
+        await query.edit_message_text(text=f"{query_text}", reply_markup=reply_markup)
+
     elif int(query.data) == 2 and name in query_text:
         query_text.remove(name)
 
@@ -68,6 +75,7 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     elif int(query.data) == 3:
         if user_id == ID_TABLE["admin"]:
             names = query_text[2:]
+            calbakc_value = int(query.data)
             query_text = "\n".join(query_text)
             await query.edit_message_text(text=f"{query_text}")
 
