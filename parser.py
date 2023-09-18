@@ -4,11 +4,13 @@ import json
 
 from secrets import cookies
 
+
 def checkPresent():
     URL = "https://up.omgtu.ru/index.php?r=journal/index"
 
     with open("present_names.json", encoding='utf-8') as f:
-        people = [name.upper() for name in json.load(f)]
+        # people = [name.upper() for name in json.load(f)]
+        people = json.load(f)
 
     values = dict()
 
