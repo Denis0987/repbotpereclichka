@@ -80,7 +80,7 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             await query.edit_message_text(text=f"{query_text}")
 
             with open("present_names.json", "w", encoding="utf-8") as f:
-                json.dump(names, f, ensure_ascii=False, indent=4)
+                json.dump([names, calbakc_value], f, ensure_ascii=False, indent=4)
 
             checkPresent()
 
