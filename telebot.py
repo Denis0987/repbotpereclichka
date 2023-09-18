@@ -99,7 +99,7 @@ if __name__ == "__main__":
 
     app.add_handler(CommandHandler("hello", hello))
 
-    app.add_handler(CommandHandler("poll", poll))
+    app.add_handler(CommandHandler("Перекличка", poll))
 
     app.add_handler(CallbackQueryHandler(buttons))
 
