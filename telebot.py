@@ -7,7 +7,7 @@ from parser import checkPresent
 
 message = "Кто присутствовал?"
 callback_value = []
-
+students = {}
 with open("table.json", encoding='utf-8') as f:
     ID_TABLE = json.load(f)
 
@@ -83,7 +83,8 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
             with open("present_names.json", "w", encoding="utf-8") as f:
                 for count_value in range(len(names)):
-                    json.dump([names[count_value], callback_value[count_value]], f, ensure_ascii=False, indent=4)
+                    students[names[count_value]] = callback_value[count_value]
+                json.dump(students, f, ensure_ascii=False, indent=4)
 
             checkPresent()
 
