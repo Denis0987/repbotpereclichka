@@ -1,6 +1,7 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, MessageHandler, CallbackQueryHandler
 import json
+import time
 
 from secrets import TOKEN
 from parser import checkPresent
@@ -92,6 +93,7 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
         else:
             print(query.from_user)
+    time.sleep(2)
 
 
 if __name__ == "__main__":
