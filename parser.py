@@ -13,11 +13,6 @@ def checkPresent():
         people = json.load(f)
 
     values = dict()
-    arr_selected_value = []
-
-    for count_value in people:
-        arr_selected_value.append(people[count_value])
-    print(arr_selected_value)
     with requests.Session() as s:
         r = s.get(URL, cookies=cookies)
 
