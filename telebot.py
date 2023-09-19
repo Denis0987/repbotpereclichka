@@ -88,7 +88,7 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
             checkPresent()
 
-            await query.edit_message_text(text=f"{query_text}\nSucess! 🎉",reply_markup=reply_markup)
+            await query.edit_message_text(text=f"{query_text}\nЖОПА 🎉",reply_markup=reply_markup)
 
         else:
             print(query.from_user)
@@ -99,7 +99,7 @@ if __name__ == "__main__":
 
     app.add_handler(CommandHandler("hello", hello))
 
-    app.add_handler(CommandHandler("Перекличка", poll))
+    app.add_handler(CommandHandler("hui", poll))
 
     app.add_handler(CallbackQueryHandler(buttons))
 
