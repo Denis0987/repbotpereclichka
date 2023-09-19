@@ -1,14 +1,17 @@
+import time
+
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, MessageHandler, CallbackQueryHandler
 import json
-import time
+# import time
 
 from secrets import TOKEN
 from parser import checkPresent
 
-message = "Кто присутствовал?"
+message = "Кто присутсвовал?"
 callback_value = []
 students = {}
+arr_fio_users = []
 with open("table.json", encoding='utf-8') as f:
     ID_TABLE = json.load(f)
 
@@ -19,60 +22,59 @@ async def hello(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 async def poll(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     keyboard = [
-            [InlineKeyboardButton("Присутствовал", callback_data=1)],
-            [InlineKeyboardButton("Отсутствовал", callback_data=2)],
-            [InlineKeyboardButton("Отсутствовал по ув.п.", callback_data=4)],
-            [InlineKeyboardButton("Отметить", callback_data=3)]
-            ]
+        [InlineKeyboardButton("Присутствовал", callback_data=1)],
+        [InlineKeyboardButton("Отсутствовал", callback_data=2)],
+        [InlineKeyboardButton("Отсутствовал по ув.п.", callback_data=4)],
+        [InlineKeyboardButton("Отметить", callback_data=3)]
+    ]
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     await update.message.reply_text(message, reply_markup=reply_markup)
 
 
 async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+
+    keyboard = [
+        [InlineKeyboardButton("Присутствовал", callback_data=1)],
+        [InlineKeyboardButton("Отсутствовал", callback_data=2)],
+        [InlineKeyboardButton("Отсутствовал по ув.п.", callback_data=4)],
+        [InlineKeyboardButton("Отметить", callback_data=3)]
+    ]
     query = update.callback_query
-
     user_id = str(query.from_user.id)
-
+    reply_markup = InlineKeyboardMarkup(keyboard)
+    query_text = query.message.text.split("\n")
     if user_id in ID_TABLE:
         name = ID_TABLE[user_id]
+        if not (name in arr_fio_users):
+            arr_fio_users.append(name)
+            name_sorting = sorted([name] + query_text[2:])
+            people = str(len(name_sorting))
+            query_text = "\n".join([f"{message} ({people})\n"] + name_sorting)
+            await query.edit_message_text(text=f"{query_text}", reply_markup=reply_markup)
     else:
         name = query.from_user.first_name + " " + user_id
 
-    query_text = query.message.text.split("\n")
 
     await query.answer()
 
-    keyboard = [
-            [InlineKeyboardButton("Присутствовал", callback_data=1)],
-            [InlineKeyboardButton("Отсутствовал", callback_data=2)],
-            [InlineKeyboardButton("Отсутствовал по ув.п.", callback_data=4)],
-            [InlineKeyboardButton("Отметить", callback_data=3)]
-            ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
+    if int(query.data) == 1:
+        callback_value.append(name + "1")
 
-    if int(query.data) == 1 and name not in query_text:
-        callback_value.append(1)
-        name_sorting = sorted([name] + query_text[2:])
-        people = str(len(name_sorting))
 
-        query_text = "\n".join([f"{message} ({people})\n"] + name_sorting)
-        await query.edit_message_text(text=f"{query_text}", reply_markup=reply_markup)
+    elif int(query.data) == 4:
+        callback_value.append(name + "4")
 
-    elif int(query.data) == 4 and name not in query_text:
-        callback_value.append(4)
-        name_sorting = sorted([name] + query_text[2:])
-        people = str(len(name_sorting))
-
-        query_text = "\n".join([f"{message} ({people})\n"] + name_sorting)
-        await query.edit_message_text(text=f"{query_text}", reply_markup=reply_markup)
 
     elif int(query.data) == 2 and name in query_text:
         query_text.remove(name)
-
+        arr_fio_users.remove(name)
+        if name+"1" in callback_value:
+            callback_value.remove(name+"1")
+        if name+"4" in callback_value:
+            callback_value.remove(name+"4")
         name_sorting = sorted(query_text[2:])
         people = str(len(name_sorting))
-
         query_text = "\n".join([f"{message} ({people})\n"] + name_sorting)
         await query.edit_message_text(text=f"{query_text}", reply_markup=reply_markup)
 
@@ -83,17 +85,18 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             await query.edit_message_text(text=f"{query_text}")
 
             with open("present_names.json", "w", encoding="utf-8") as f:
+                print(callback_value)
                 for count_value in range(len(names)):
-                    students[names[count_value]] = callback_value[count_value]
+                    students[arr_fio_users[count_value]] = int(callback_value[count_value][-1])
                 json.dump(students, f, ensure_ascii=False, indent=4)
 
             checkPresent()
 
-            await query.edit_message_text(text=f"{query_text}\nЖОПА 🎉",reply_markup=reply_markup)
+            await query.edit_message_text(text=f"{query_text}\nОтметил🎉", reply_markup=reply_markup)
 
         else:
             print(query.from_user)
-    time.sleep(2)
+    # time.sleep(0.5)
 
 
 if __name__ == "__main__":
@@ -101,7 +104,7 @@ if __name__ == "__main__":
 
     app.add_handler(CommandHandler("hello", hello))
 
-    app.add_handler(CommandHandler("hui", poll))
+    app.add_handler(CommandHandler("perecklichka", poll))
 
     app.add_handler(CallbackQueryHandler(buttons))
 
