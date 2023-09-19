@@ -3,7 +3,7 @@ import time
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, MessageHandler, CallbackQueryHandler
 import json
-# import time
+import time
 
 from secrets import TOKEN
 from parser import checkPresent
@@ -23,7 +23,7 @@ async def hello(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 async def poll(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     keyboard = [
         [InlineKeyboardButton("Присутствовал", callback_data=1)],
-        [InlineKeyboardButton("Отсутствовал", callback_data=2)],
+        [InlineKeyboardButton("Отмена", callback_data=2)],
         [InlineKeyboardButton("Отсутствовал по ув.п.", callback_data=4)],
         [InlineKeyboardButton("Отметить", callback_data=3)]
     ]
@@ -33,10 +33,9 @@ async def poll(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 
 async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-
     keyboard = [
         [InlineKeyboardButton("Присутствовал", callback_data=1)],
-        [InlineKeyboardButton("Отсутствовал", callback_data=2)],
+        [InlineKeyboardButton("Отмена", callback_data=2)],
         [InlineKeyboardButton("Отсутствовал по ув.п.", callback_data=4)],
         [InlineKeyboardButton("Отметить", callback_data=3)]
     ]
@@ -46,33 +45,45 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     query_text = query.message.text.split("\n")
     if user_id in ID_TABLE:
         name = ID_TABLE[user_id]
-        if not (name in arr_fio_users):
-            arr_fio_users.append(name)
-            name_sorting = sorted([name] + query_text[2:])
-            people = str(len(name_sorting))
-            query_text = "\n".join([f"{message} ({people})\n"] + name_sorting)
-            await query.edit_message_text(text=f"{query_text}", reply_markup=reply_markup)
+        if int(query.data) != 3 and int(query.data) != 2:
+            if not (name in arr_fio_users):
+                name_sorting = sorted([name] + query_text[2:])
+                people = str(len(name_sorting))
+                print(name_sorting)
+                query_text = "\n".join([f"{message} ({people})\n"] + name_sorting)
+                await query.edit_message_text(text=f"{query_text}", reply_markup=reply_markup)
     else:
         name = query.from_user.first_name + " " + user_id
-
 
     await query.answer()
 
     if int(query.data) == 1:
+        if name + "1" in callback_value:
+            callback_value.remove(name + "1")
+            arr_fio_users.remove(name)
+        if name + "4" in callback_value:
+            callback_value.remove(name + "4")
+            arr_fio_users.remove(name)
         callback_value.append(name + "1")
-
+        arr_fio_users.append(name)
 
     elif int(query.data) == 4:
+        if name + "1" in callback_value:
+            callback_value.remove(name + "1")
+            arr_fio_users.remove(name)
+        if name + "4" in callback_value:
+            callback_value.remove(name + "4")
+            arr_fio_users.remove(name)
         callback_value.append(name + "4")
-
+        arr_fio_users.append(name)
 
     elif int(query.data) == 2 and name in query_text:
         query_text.remove(name)
         arr_fio_users.remove(name)
-        if name+"1" in callback_value:
-            callback_value.remove(name+"1")
-        if name+"4" in callback_value:
-            callback_value.remove(name+"4")
+        if name + "1" in callback_value:
+            callback_value.remove(name + "1")
+        if name + "4" in callback_value:
+            callback_value.remove(name + "4")
         name_sorting = sorted(query_text[2:])
         people = str(len(name_sorting))
         query_text = "\n".join([f"{message} ({people})\n"] + name_sorting)
@@ -85,7 +96,6 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             await query.edit_message_text(text=f"{query_text}")
 
             with open("present_names.json", "w", encoding="utf-8") as f:
-                print(callback_value)
                 for count_value in range(len(names)):
                     students[arr_fio_users[count_value]] = int(callback_value[count_value][-1])
                 json.dump(students, f, ensure_ascii=False, indent=4)
