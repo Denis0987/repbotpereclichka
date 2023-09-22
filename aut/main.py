@@ -3,11 +3,8 @@ from time import sleep
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.service import Service
-from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.action_chains import ActionChains
-
 
 s = Service(executable_path='geckodriver.exe',
             log_output='geckodriver.log')
@@ -15,11 +12,11 @@ s = Service(executable_path='geckodriver.exe',
 # s = Service(executable_path='/home/bunpdy/PycharmProjects/pythonProject/selenium_new/geckodriver')
 data = {
 
-        'login': "Denis_Ivanov_8032",
-        'password': "11800cce",
-        'name': "Денис",
-        'surname': "Иванов",
-        'email': "Denis8.9@bk.ru",
+    'login': "Denis_Ivanov_8032",
+    'password': "11800cce",
+    'name': "Денис",
+    'surname': "Иванов",
+    'email': "Denis8.9@bk.ru",
 }
 
 # login = "log"
@@ -31,15 +28,13 @@ with webdriver.Firefox(service=s) as driver:
     sleep(1)
     # sleep(1)
     input_name = driver.find_element(By.XPATH, "//input[@name='USER_NAME']")
-    sleep(1)
+    # sleep(1)
     input_name.send_keys(data.get('name'))
-    sleep(1)
     input_surname = driver.find_element(By.XPATH, "//input[@name='USER_LAST_NAME']")
-    sleep(1)
+    # sleep(1)
     input_surname.send_keys(data.get('surname'))
-    sleep(1)
     input_email = driver.find_element(By.XPATH, "//input[@name='USER_EMAIL']")
-    sleep(1)
+    # sleep(1)
     input_email.send_keys(data.get('email'))
     # sleep(1)
     # # # !
@@ -48,15 +43,13 @@ with webdriver.Firefox(service=s) as driver:
     #
     # WebDriverWait(driver, 20).until(
     #     EC.element_to_be_clickable((By.CSS_SELECTOR, "div.recaptcha-checkbox-border"))).click()
-    sleep(1)
+    # sleep(1)
     driver.switch_to.default_content()
-    sleep(1)
+    # sleep(1)
     input_log = driver.find_element(By.XPATH, "//input[@name='USER_LOGIN']")
-    sleep(1)
     input_log.send_keys(data.get('login'))
-    sleep(1)
+    # sleep(1)
     input_pass = driver.find_element(By.XPATH, "//input[@name='USER_PASSWORD']")
-    sleep(1)
     input_pass.send_keys(data.get("password"))
     sleep(1)
     # !!!
@@ -74,4 +67,3 @@ with webdriver.Firefox(service=s) as driver:
     # sleep(1)
     # btn_etc.click()
     sleep(999999)
-
