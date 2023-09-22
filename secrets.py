@@ -1,5 +1,5 @@
-TOKEN = "5932776750:AAFvp-zgb04h2SZ6zlOjKhhaJjJr3B4bHT4"
+TOKEN = "5932776750:AAG2aqm4Dkmz8_pQDrY7yDvJ7xKYHV73vhE"
 
 cookies = {
-    "STUDSESSID": "l32vp0s91nmel6osuvsitosfq1"
+    "STUDSESSID": "2knv1d2mt3aga3lvls8cejc6b6"
 }

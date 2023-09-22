@@ -40,7 +40,7 @@ async def satanspam(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         n=0
         while (n != 500):
             time.sleep(2)
-            await update.message.reply_text(f'Этот человек сосал член')
+            await update.message.reply_text(f'Этот еблан не умеет читать')
             n+=1
 
 async def perekl(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -142,7 +142,7 @@ async def buttons(update, context):
 
             checkPresent()
             query_text = query.message.text
-            await query.edit_message_text(text=f"{query_text}\nОтметил🎉", reply_markup=reply_markup)
+            await query.edit_message_text(text=f"{query_text}\nОтметил🎉", reply_markup='')
 
     #        else:
     #            print(query.from_user)
