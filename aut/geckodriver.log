@@ -1,0 +1,38 @@
+1695232465219	geckodriver	INFO	Listening on 127.0.0.1:59170
+1695232468292	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59171" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofile15ZJOz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695232468766	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695232468864	Marionette	INFO	Listening on port 59182
+WebDriver BiDi listening on ws://127.0.0.1:59171
+Read port: 59182
+1695232469242	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59171/devtools/browser/d63ee1c2-5bd6-4d8d-87ef-18a6616e44ef
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+B@https://top-fwz1.mail.ru/js/code.js:5:174
+f@https://top-fwz1.mail.ru/js/code.js:37:326
+b@https://top-fwz1.mail.ru/js/code.js:37:209
+
+1695233267939	geckodriver	INFO	Listening on 127.0.0.1:59909
+1695233270987	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59910" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofileqmpYaO"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695233271353	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695233271443	Marionette	INFO	Listening on port 59921
+WebDriver BiDi listening on ws://127.0.0.1:59910
+Read port: 59921
+1695233271785	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59910/devtools/browser/964fe389-ce28-4e61-8f19-869f8dfb47fc
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+B@https://top-fwz1.mail.ru/js/code.js:5:174
+f@https://top-fwz1.mail.ru/js/code.js:37:326
+b@https://top-fwz1.mail.ru/js/code.js:37:209
+
+1695233342821	Marionette	INFO	Stopped listening on port 59921
+Dynamically enable window occlusion 1
