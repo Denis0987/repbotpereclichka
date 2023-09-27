@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-from secrets import cookies
+from cookie import cookies
 
 
 def checkPresent():
@@ -21,7 +21,7 @@ def checkPresent():
 
     with requests.Session() as s:
         r = s.get(URL, cookies=cookies)
-
+        print(cookies)
         soup = BeautifulSoup(r.text, "html.parser")
         block = soup.find(class_="bs-docs-section")
         date = block.find(class_="active").get_text().strip()
