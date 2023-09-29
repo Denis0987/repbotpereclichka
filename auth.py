@@ -49,7 +49,12 @@ def get_cockies():
         jurnal = driver.find_element(By.XPATH, "//a[@href='/index.php?r=journal/index']")
         jurnal.click()
         all_cock = [driver.get_cookies()]
-        ready_cockie += all_cock[-1][-1].get('value')
+        for j in all_cock[-1]:
+            if j.get('name') == "STUDSESSID":
+                ready_cockie += (j.get("value"))
+                break
+        else:
+            print("Куки не найдены")
         driver.close()
         return ready_cockie
 

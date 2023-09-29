@@ -11,7 +11,6 @@ def checkPresent():
     with open("present_names.json", 'r', encoding='utf-8') as f:
         # people = [name.upper() for name in json.load(f)]
         people = json.load(f)
-
     values = dict()
     arr_selected_value = []
 

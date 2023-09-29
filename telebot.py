@@ -133,7 +133,7 @@ async def buttons(update, context):
 
     elif int(query.data) == 3:
         if user_id == ID_TABLE["admin"]:
-
+            await query.edit_message_text(text=f"{query_text}", reply_markup='')
             with open("present_names.json", "w", encoding="utf-8") as f:
                 print(arr_fio_users,callback_value)
                 for count_value in range(len_arr_names):
