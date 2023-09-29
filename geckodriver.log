@@ -686,3 +686,46 @@ Pk/<@https://www.youtube.com/s/player/2626486d/www-embed-player.vflset/www-embed
 
 1695830280855	Marionette	INFO	Stopped listening on port 64338
 Dynamically enable window occlusion 1
+1695869896465	geckodriver	INFO	Listening on 127.0.0.1:61967
+1695869900118	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "61968" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofilezuT7zX"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695869900845	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695869900932	Marionette	INFO	Listening on port 61981
+WebDriver BiDi listening on ws://127.0.0.1:61968
+Read port: 61981
+1695869901209	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:61968/devtools/browser/595994e3-386a-435e-b7c3-ac725b697a4a
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+B@https://top-fwz1.mail.ru/js/code.js:5:174
+f@https://top-fwz1.mail.ru/js/code.js:37:326
+b@https://top-fwz1.mail.ru/js/code.js:37:209
+
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+B@https://top-fwz1.mail.ru/js/code.js:5:174
+f@https://top-fwz1.mail.ru/js/code.js:37:326
+b@https://top-fwz1.mail.ru/js/code.js:37:209
+
+JavaScript warning: https://www.youtube.com/s/player/2626486d/player_ias.vflset/ru_RU/base.js, line 155: Script terminated by timeout at:
+g.Ja@https://www.youtube.com/s/player/2626486d/player_ias.vflset/ru_RU/base.js:155:14
+g.k.ra@https://www.youtube.com/s/player/2626486d/player_ias.vflset/ru_RU/base.js:10385:31
+g.k.ra@https://www.youtube.com/s/player/2626486d/player_ias.vflset/ru_RU/base.js:10513:41
+g.k.AP@https://www.youtube.com/s/player/2626486d/player_ias.vflset/ru_RU/base.js:12452:27
+g.k.ra@https://www.youtube.com/s/player/2626486d/player_ias.vflset/ru_RU/base.js:8235:291
+g.mG.prototype.ra@https://www.youtube.com/s/player/2626486d/player_ias.vflset/ru_RU/base.js:8616:72
+g.k.sendAbandonmentPing@https://www.youtube.com/s/player/2626486d/player_ias.vflset/ru_RU/base.js:12147:75
+g.k.sendAbandonmentPing@https://www.youtube.com/s/player/2626486d/player_ias.vflset/ru_RU/base.js:10315:62
+ZT/a.state.j[b]@https://www.youtube.com/s/player/2626486d/player_ias.vflset/ru_RU/base.js:4751:53
+cx/<@https://www.youtube.com/s/player/2626486d/www-embed-player.vflset/www-embed-player.js:1809:106
+ox@https://www.youtube.com/s/player/2626486d/www-embed-player.vflset/www-embed-player.js:1844:46
+sx<@https://www.youtube.com/s/player/2626486d/www-embed-player.vflset/www-embed-player.js:1851:183
+Pk/<@https://www.youtube.com/s/player/2626486d/www-embed-player.vflset/www-embed-player.js:848:63
+
+1695869912558	Marionette	INFO	Stopped listening on port 61981
+Dynamically enable window occlusion 1
