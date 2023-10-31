@@ -1,6 +1,6 @@
 from selenium import webdriver
 from time import sleep
-
+import json
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.support.wait import WebDriverWait
@@ -9,6 +9,7 @@ from selenium.webdriver.firefox.options import Options
 
 
 def get_cockies():
+    cookie={}
     s = Service(executable_path='geckodriver.exe',
                 log_output='geckodriver.log')
 
@@ -16,7 +17,6 @@ def get_cockies():
     options.add_argument("--headless")
 
     data = {
-
         'login': "Denis_Ivanov_8032",
         'password': "11800cce",
         'name': "Денис",
@@ -56,7 +56,9 @@ def get_cockies():
         else:
             print("Куки не найдены")
         driver.close()
-        return ready_cockie
+        with open("cookie.json", "w", encoding="utf-8") as f:
+            cookie["STUDSESSID"] = ready_cockie
+            json.dump(cookie, f, ensure_ascii=False, indent=4)
 
 
 if __name__ == "__main__":

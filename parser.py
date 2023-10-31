@@ -1,11 +1,11 @@
 import requests
 from bs4 import BeautifulSoup
 import json
-
-from cookie import cookies
+from auth import get_cockies
 
 
 def checkPresent():
+    get_cockies()
     URL = "https://up.omgtu.ru/index.php?r=journal/index"
 
     with open("present_names.json", 'r', encoding='utf-8') as f:
@@ -19,8 +19,11 @@ def checkPresent():
     print(arr_selected_value)
 
     with requests.Session() as s:
-        r = s.get(URL, cookies=cookies)
+        with open("cookie.json", 'r', encoding='utf-8') as f:
+            # people = [name.upper() for name in json.load(f)]
+            cookies = json.load(f)
         print(cookies)
+        r = s.get(URL, cookies=cookies)
         soup = BeautifulSoup(r.text, "html.parser")
         block = soup.find(class_="bs-docs-section")
         date = block.find(class_="active").get_text().strip()
@@ -42,6 +45,6 @@ def checkPresent():
                             elif(people[person] == 4):
                                 val = col.find("select")["name"]
                                 values[val] = 2
-
+    
     r = requests.post(URL, data=values, cookies=cookies)
     print(r)

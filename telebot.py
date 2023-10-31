@@ -8,7 +8,7 @@ import asyncio
 import random
 
 from secrets import TOKEN
-from parser import checkPresent
+
 
 message = "Кто присутсвовал?"
 callback_value = []
@@ -33,45 +33,40 @@ async def anek(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         num = random.randrange(len(p))
         await update.message.reply_text(f'{p[num]}')
 
-async def satanspam(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    user_id = update.message.from_user.id
-    print(ID_TABLE["admin"], user_id)
-    if(str(user_id) != str(ID_TABLE["admin"])):
-        n=0
-        while (n != 500):
-            time.sleep(2)
-            await update.message.reply_text(f'Этот еблан не умеет читать')
-            n+=1
 
 async def perekl(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user_id = update.message.from_user.id
     print(ID_TABLE["admin"], user_id)
     if(str(user_id) == str(ID_TABLE["admin"])):
         keyboard = [
-            [InlineKeyboardButton("Присутствовал", callback_data=1)],
-            [InlineKeyboardButton("Отсутствовал по ув.п.", callback_data=4)],
-            [InlineKeyboardButton("Отмена", callback_data=2)],
-            [InlineKeyboardButton("Отметить", callback_data=3)]
+            [
+            InlineKeyboardButton("Присутствовал", callback_data=1),
+            InlineKeyboardButton("Отсутствовал по ув.п.", callback_data=4),
+            ],
+            [
+            InlineKeyboardButton("Отмена", callback_data=2),
+            InlineKeyboardButton("Отметить", callback_data=3),
+            ]
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
 
         await update.message.reply_text(message, reply_markup=reply_markup)
     else:
-        n=0
-        while (n != 15):
-            time.sleep(2)
-            await update.message.reply_text(f'Этот человек тупой еблан с кривыми руками')
-            n+=1
+        await update.message.reply_text(f'У тебя нет прав на это действие')
 
 
 
 async def buttons(update, context):
     keyboard = [
-        [InlineKeyboardButton("Присутствовал", callback_data=1)],
-        [InlineKeyboardButton("Отсутствовал по ув.п.", callback_data=4)],
-        [InlineKeyboardButton("Отмена", callback_data=2)],
-        [InlineKeyboardButton("Отметить", callback_data=3)]
-    ]
+        [
+            InlineKeyboardButton("Присутствовал", callback_data=1),
+            InlineKeyboardButton("Отсутствовал по ув.п.", callback_data=4),
+        ],
+        [
+            InlineKeyboardButton("Отмена", callback_data=2),
+            InlineKeyboardButton("Отметить", callback_data=3)
+        ]
+        ]
     query = update.callback_query
     user_id = str(query.from_user.id)
     reply_markup = InlineKeyboardMarkup(keyboard)
@@ -139,7 +134,7 @@ async def buttons(update, context):
                 for count_value in range(len_arr_names):
                     students[arr_fio_users[count_value]] = int(callback_value[count_value][-1])
                 json.dump(students, f, ensure_ascii=False, indent=4)
-
+            from parser import checkPresent
             checkPresent()
             query_text = query.message.text
             await query.edit_message_text(text=f"{query_text}\nОтметил🎉", reply_markup='')
@@ -176,8 +171,6 @@ if __name__ == "__main__":
     app.add_handler(CommandHandler("hello", hello))
 
     app.add_handler(CommandHandler("sex", sex))
-
-    app.add_handler(CommandHandler("nevizivaymenya", satanspam))
 
     app.add_handler(CommandHandler("perekl", perekl))
 
