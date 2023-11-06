@@ -3597,3 +3597,926 @@ Xk/<@https://www.youtube.com/s/player/9e328581/www-embed-player.vflset/www-embed
 
 1698747140737	Marionette	INFO	Stopped listening on port 54742
 Dynamically enable window occlusion 1
+1698842728188	geckodriver	INFO	Listening on 127.0.0.1:58498
+1698842731260	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "58499" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofileUlYVNt"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1698842731637	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1698842731728	Marionette	INFO	Listening on port 58507
+WebDriver BiDi listening on ws://127.0.0.1:58499
+Read port: 58507
+1698842731961	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:58499/devtools/browser/7b0bd5a4-6fa7-46d8-8bba-5622ef5e89fd
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 9: Script terminated by timeout at:
+R@https://top-fwz1.mail.ru/js/code.js:9:406
+lc@https://top-fwz1.mail.ru/js/code.js:20:151
+G@https://top-fwz1.mail.ru/js/code.js:15:73
+l.prototype.unload@https://top-fwz1.mail.ru/js/code.js:85:415
+Ea@https://top-fwz1.mail.ru/js/code.js:22:121
+
+JavaScript warning: https://yastatic.net/jquery/2.1.4/jquery.min.js, line 2: Script terminated by timeout at:
+ga.setDocument@https://yastatic.net/jquery/2.1.4/jquery.min.js:2:11790
+ea@https://yastatic.net/jquery/2.1.4/jquery.min.js:2:5964
+
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+s@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:40:34
+b@https://top-fwz1.mail.ru/js/code.js:39:424
+
+1698842745964	Marionette	INFO	Stopped listening on port 58507
+JavaScript warning: https://www.youtube.com/s/player/0b285984/www-embed-player.vflset/www-embed-player.js, line 1073: Script terminated by timeout at:
+co/this.done</<@https://www.youtube.com/s/player/0b285984/www-embed-player.vflset/www-embed-player.js:1073:146
+
+JavaScript warning: https://up.omgtu.ru/assets/974142a2/jquery.min.js, line 2: Script terminated by timeout at:
+m.fn.init@https://up.omgtu.ru/assets/974142a2/jquery.min.js:2:24119
+m@https://up.omgtu.ru/assets/974142a2/jquery.min.js:2:393
+inter<@https://up.omgtu.ru/index.php?r=site/index:649:18
+
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: OperationError: Could not move temporary file(C:\Users\user\AppData\Local\Temp\rust_mozprofileUlYVNt\sessionCheckpoints.json.tmp) to destination(C:\Users\user\AppData\Local\Temp\rust_mozprofileUlYVNt\sessionCheckpoints.json)
+JavaScript warning: https://www.google.com/js/th/QcAALD0fIyejrwdw44bQZTSl0S_tfxpIwjw1mnUR6iI.js line 2 > eval line 1864 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1698888697501	geckodriver	INFO	Listening on 127.0.0.1:51897
+1698888705518	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "51898" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofilef2kVoj"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1698888708331	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1698888708436	Marionette	INFO	Listening on port 52228
+WebDriver BiDi listening on ws://127.0.0.1:51898
+Read port: 52228
+1698888708687	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:51898/devtools/browser/68dbddb7-f954-45ce-99f4-d3968654fb1c
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+s@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:40:34
+b@https://top-fwz1.mail.ru/js/code.js:39:424
+
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+s@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:40:34
+b@https://top-fwz1.mail.ru/js/code.js:39:424
+
+JavaScript warning: https://www.youtube.com/s/player/0b285984/www-embed-player.vflset/www-embed-player.js, line 865: Script terminated by timeout at:
+fl/<@https://www.youtube.com/s/player/0b285984/www-embed-player.vflset/www-embed-player.js:865:47
+
+1698888722885	Marionette	INFO	Stopped listening on port 52228
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+1698915333748	geckodriver	INFO	Listening on 127.0.0.1:54299
+1698915336775	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "54300" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofileTFFE99"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1698915337261	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1698915337351	Marionette	INFO	Listening on port 54307
+WebDriver BiDi listening on ws://127.0.0.1:54300
+Read port: 54307
+1698915337568	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:54300/devtools/browser/a06268b9-0b1e-49e6-bf5d-7dc73807407d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+s@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:40:34
+b@https://top-fwz1.mail.ru/js/code.js:39:424
+
+JavaScript warning: https://www.youtube.com/s/player/0b285984/www-embed-player.vflset/www-embed-player.js, line 865: Script terminated by timeout at:
+fl/<@https://www.youtube.com/s/player/0b285984/www-embed-player.vflset/www-embed-player.js:865:47
+
+1698915351644	Marionette	INFO	Stopped listening on port 54307
+Dynamically enable window occlusion 1
+1699007008645	geckodriver	INFO	Listening on 127.0.0.1:58267
+1699023959683	geckodriver	INFO	Listening on 127.0.0.1:57285
+1699023962746	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "57286" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofileegdh09"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699023963233	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699023963330	Marionette	INFO	Listening on port 57295
+WebDriver BiDi listening on ws://127.0.0.1:57286
+Read port: 57295
+1699023963568	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:57286/devtools/browser/999a1dd3-ea04-4186-b814-b5203afe8a8c
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js, line 884: Script terminated by timeout at:
+R@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:884:131
+Yx<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:1874:98
+ll/<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:868:63
+
+1699023977104	Marionette	INFO	Stopped listening on port 57295
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+1699027055086	geckodriver	INFO	Listening on 127.0.0.1:63215
+1699027058270	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "63216" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofileeGkBTi"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699027059536	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699027059645	Marionette	INFO	Listening on port 63229
+WebDriver BiDi listening on ws://127.0.0.1:63216
+Read port: 63229
+1699027059891	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:63216/devtools/browser/5cb6a4d8-5408-4b94-97ef-d72b16a6776f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://www.google.com/js/th/PCqCuqRWleJvAFB5HssaUTeU1BO5ETzC_zrpZ-5DxRc.js line 2 > eval line 2718 > eval line 1 > eval line 1 > eval, line 1: Script terminated by timeout at:
+z@https://www.google.com/js/th/PCqCuqRWleJvAFB5HssaUTeU1BO5ETzC_zrpZ-5DxRc.js line 2 > eval line 2718 > eval line 1 > eval line 1 > eval:1:21
+f@https://www.google.com/js/th/PCqCuqRWleJvAFB5HssaUTeU1BO5ETzC_zrpZ-5DxRc.js line 2 > eval line 2718 > eval line 1 > eval line 1 > eval:1:213
+@https://www.google.com/js/th/PCqCuqRWleJvAFB5HssaUTeU1BO5ETzC_zrpZ-5DxRc.js line 2 > eval line 2718 > eval line 1 > eval line 1 > eval:1:106
+HT@https://www.google.com/js/th/PCqCuqRWleJvAFB5HssaUTeU1BO5ETzC_zrpZ-5DxRc.js line 2 > eval line 2718 > eval line 1 > eval line 1 > eval:1:246
+EQ@https://www.google.com/js/th/PCqCuqRWleJvAFB5HssaUTeU1BO5ETzC_zrpZ-5DxRc.js line 2 > eval line 2718 > eval line 1 > eval line 1 > eval:1:110
+F.prototype.s</<@https://www.google.com/js/th/PCqCuqRWleJvAFB5HssaUTeU1BO5ETzC_zrpZ-5DxRc.js line 2 > eval:2718:35566
+mz@https://www.google.com/js/th/PCqCuqRWleJvAFB5HssaUTeU1BO5ETzC_zrpZ-5DxRc.js line 2 > eval:2718:22612
+v$@https://www.google.com/js/th/PCqCuqRWleJvAFB5HssaUTeU1BO5ETzC_zrpZ-5DxRc.js line 2 > eval:2718:911
+b@https://www.google.com/js/th/PCqCuqRWleJvAFB5HssaUTeU1BO5ETzC_zrpZ-5DxRc.js line 2 > eval:2718:12345
+oU@https://www.google.com/js/th/PCqCuqRWleJvAFB5HssaUTeU1BO5ETzC_zrpZ-5DxRc.js line 2 > eval line 2718 > eval line 1 > eval line 1 > eval:1:572
+@https://www.google.com/js/th/PCqCuqRWleJvAFB5HssaUTeU1BO5ETzC_zrpZ-5DxRc.js line 2 > eval:2718:34748
+U@https://www.google.com/js/th/PCqCuqRWleJvAFB5HssaUTeU1BO5ETzC_zrpZ-5DxRc.js line 2 > eval:2718:7356
+@https://www.google.com/js/th/PCqCuqRWleJvAFB5HssaUTeU1BO5ETzC_zrpZ-5DxRc.js line 2 > eval:2718:37410
+An.prototype.r_@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:7828:153
+qI.prototype.z0@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:8935:41
+g.k.invoke@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:8926:64
+WKa@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:3976:47
+g.$Ka/a.c1a@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:3982:276
+g.aLa@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:3985:167
+g.k.CR@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:12247:77
+g.k.sendAbandonmentPing@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:12136:102
+g.k.sendAbandonmentPing@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:10236:62
+XT/a.state.j[b]@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:4756:53
+Ix/<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:1834:107
+Ux@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:1867:46
+Yx<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:1874:183
+ll/<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:868:63
+
+1699027074832	Marionette	INFO	Stopped listening on port 63229
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+1699027406060	geckodriver	INFO	Listening on 127.0.0.1:64145
+1699027409119	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "64146" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofile2xFpx9"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699027409673	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699027409769	Marionette	INFO	Listening on port 64203
+WebDriver BiDi listening on ws://127.0.0.1:64146
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+Read port: 64203
+1699027411245	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:64146/devtools/browser/586b310f-9378-4889-acbf-e9fbdc65ec7e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 6: Script terminated by timeout at:
+M@https://top-fwz1.mail.ru/js/code.js:6:121
+k.prototype.unload@https://top-fwz1.mail.ru/js/code.js:84:354
+Ea@https://top-fwz1.mail.ru/js/code.js:22:121
+
+JavaScript warning: https://forms.yandex.ru/cloud/643e643b3e9d0801f714ab9c/?iframe=1&groups=%D0%9C%D0%9E-231&codespec=02.03.03&spec=%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5+%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B5+%D0%B8+%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5+%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85+%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC&course=1&profname=&faculty=%D0%A4%D0%B0%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D0%B5%D1%82+%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85+%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9+%D0%B8+%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D1%85+%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC&formedu=%D0%9E%D1%87%D0%BD%D0%B0%D1%8F&citizenship=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F+%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F, line 1055: Script terminated by timeout at:
+n@https://forms.yandex.ru/cloud/643e643b3e9d0801f714ab9c/?iframe=1&groups=%D0%9C%D0%9E-231&codespec=02.03.03&spec=%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5+%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B5+%D0%B8+%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5+%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85+%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC&course=1&profname=&faculty=%D0%A4%D0%B0%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D0%B5%D1%82+%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85+%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9+%D0%B8+%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D1%85+%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC&formedu=%D0%9E%D1%87%D0%BD%D0%B0%D1%8F&citizenship=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F+%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F:1055:2891
+
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+1699027426173	Marionette	INFO	Stopped listening on port 64203
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript warning: https://www.google.com/js/th/PCqCuqRWleJvAFB5HssaUTeU1BO5ETzC_zrpZ-5DxRc.js line 2 > eval line 623 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1699027742100	geckodriver	INFO	Listening on 127.0.0.1:65066
+1699027745172	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "65067" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofile5Vgrma"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699027745680	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699027745777	Marionette	INFO	Listening on port 65075
+WebDriver BiDi listening on ws://127.0.0.1:65067
+Read port: 65075
+1699027746019	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:65067/devtools/browser/37cf8355-740d-4779-ae84-653d3bf43f49
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+1699027761799	Marionette	INFO	Stopped listening on port 65075
+JavaScript warning: https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js, line 1913: Script terminated by timeout at:
+g.OB/<@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:1913:49
+
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript warning: https://www.google.com/js/th/PCqCuqRWleJvAFB5HssaUTeU1BO5ETzC_zrpZ-5DxRc.js line 2 > eval line 1265 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1699030532304	geckodriver	INFO	Listening on 127.0.0.1:54043
+1699030535371	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "54044" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofileeBkck1"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699030535833	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699030535929	Marionette	INFO	Listening on port 54059
+WebDriver BiDi listening on ws://127.0.0.1:54044
+Read port: 54059
+1699030536157	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:54044/devtools/browser/d28476d6-90d8-463d-9133-3467107d52e2
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 39: Script terminated by timeout at:
+g@https://top-fwz1.mail.ru/js/code.js:39:361
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js, line 884: Script terminated by timeout at:
+R@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:884:131
+Yx<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:1874:98
+ll/<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:868:63
+
+1699030549505	Marionette	INFO	Stopped listening on port 54059
+Dynamically enable window occlusion 1
+1699031234793	geckodriver	INFO	Listening on 127.0.0.1:55555
+1699031237868	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "55556" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofile4s92N7"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699031238336	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699031238424	Marionette	INFO	Listening on port 55587
+WebDriver BiDi listening on ws://127.0.0.1:55556
+Read port: 55587
+1699031238657	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:55556/devtools/browser/1191545f-d265-4535-b468-c0141faf1280
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 14: Script terminated by timeout at:
+Ab@https://top-fwz1.mail.ru/js/code.js:14:224
+k.prototype.unload@https://top-fwz1.mail.ru/js/code.js:84:193
+Ea@https://top-fwz1.mail.ru/js/code.js:22:121
+
+JavaScript warning: https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js, line 884: Script terminated by timeout at:
+R@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:884:131
+Yx<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:1874:98
+ll/<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:868:63
+
+1699031252316	Marionette	INFO	Stopped listening on port 55587
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+1699031378891	geckodriver	INFO	Listening on 127.0.0.1:56092
+1699031381961	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "56093" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofilepX2MnP"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699031382463	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699031382565	Marionette	INFO	Listening on port 56110
+WebDriver BiDi listening on ws://127.0.0.1:56093
+Read port: 56110
+1699031382816	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:56093/devtools/browser/47d8e6a7-56f2-44ff-b1e4-ed2f7bd73c96
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 16: Script terminated by timeout at:
+J@https://top-fwz1.mail.ru/js/code.js:16:25
+k.prototype.unload@https://top-fwz1.mail.ru/js/code.js:84:355
+Ea@https://top-fwz1.mail.ru/js/code.js:22:121
+
+JavaScript warning: https://forms.yandex.ru/cloud/643e643b3e9d0801f714ab9c/?iframe=1&groups=%D0%9C%D0%9E-231&codespec=02.03.03&spec=%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5+%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B5+%D0%B8+%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5+%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85+%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC&course=1&profname=&faculty=%D0%A4%D0%B0%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D0%B5%D1%82+%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85+%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9+%D0%B8+%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D1%85+%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC&formedu=%D0%9E%D1%87%D0%BD%D0%B0%D1%8F&citizenship=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F+%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F, line 1055: Script terminated by timeout at:
+n@https://forms.yandex.ru/cloud/643e643b3e9d0801f714ab9c/?iframe=1&groups=%D0%9C%D0%9E-231&codespec=02.03.03&spec=%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5+%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B5+%D0%B8+%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5+%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85+%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC&course=1&profname=&faculty=%D0%A4%D0%B0%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D0%B5%D1%82+%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85+%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9+%D0%B8+%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D1%85+%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC&formedu=%D0%9E%D1%87%D0%BD%D0%B0%D1%8F&citizenship=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F+%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F:1055:2891
+
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 16: Script terminated by timeout at:
+J@https://top-fwz1.mail.ru/js/code.js:16:25
+k.prototype.unload@https://top-fwz1.mail.ru/js/code.js:84:355
+Ea@https://top-fwz1.mail.ru/js/code.js:22:121
+
+JavaScript warning: https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js, line 884: Script terminated by timeout at:
+R@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:884:131
+Yx<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:1874:98
+ll/<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:868:63
+
+1699031396537	Marionette	INFO	Stopped listening on port 56110
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+1699031430148	geckodriver	INFO	Listening on 127.0.0.1:56586
+1699031433219	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "56587" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofilePqsVle"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699031433715	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699031433809	Marionette	INFO	Listening on port 56607
+WebDriver BiDi listening on ws://127.0.0.1:56587
+Read port: 56607
+1699031434049	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:56587/devtools/browser/c64fe25c-e852-4f30-b9a1-89ff601fdd83
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:148
+J@https://top-fwz1.mail.ru/js/code.js:19:224
+k.prototype.unload@https://top-fwz1.mail.ru/js/code.js:84:355
+Ea@https://top-fwz1.mail.ru/js/code.js:22:121
+
+JavaScript warning: https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js, line 884: Script terminated by timeout at:
+R@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:884:131
+Yx<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:1874:98
+ll/<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:868:63
+
+1699031447294	Marionette	INFO	Stopped listening on port 56607
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+1699031551427	geckodriver	INFO	Listening on 127.0.0.1:57092
+1699031554523	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "57093" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofilepV1Q9m"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699031555063	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699031555159	Marionette	INFO	Listening on port 57119
+WebDriver BiDi listening on ws://127.0.0.1:57093
+Read port: 57119
+1699031555378	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:57093/devtools/browser/ba97b830-40e1-43af-9e6f-8749461b7c8f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 14: Script terminated by timeout at:
+Ab@https://top-fwz1.mail.ru/js/code.js:14:209
+k.prototype.unload@https://top-fwz1.mail.ru/js/code.js:84:193
+Ea@https://top-fwz1.mail.ru/js/code.js:22:121
+
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://forms.yandex.ru/cloud/603e5777398aac48bd1bf072/?iframe=1&answer_fio=%D0%98%D0%92%D0%90%D0%9D%D0%9E%D0%92%20%D0%94%D0%B5%D0%BD%D0%B8%D1%81%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B5%D0%B2%D0%B8%D1%87&answer_fnpp=1457879&answer_status=%D1%81%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82&answer_formedu=%D0%9E%D1%87%D0%BD%D0%B0%D1%8F&gr=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F%20%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F&degree_of_education=%D0%91%D0%B0%D0%BA%D0%B0%D0%BB%D0%B0%D0%B2%D1%80%D0%B8%D0%B0%D1%82&age=18&faculty=%D0%A4%D0%B0%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D0%B5%D1%82%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85%20%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9%20%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC&group=%D0%9C%D0%9E-231, line 24: Script terminated by timeout at:
+n@https://forms.yandex.ru/cloud/603e5777398aac48bd1bf072/?iframe=1&answer_fio=%D0%98%D0%92%D0%90%D0%9D%D0%9E%D0%92%20%D0%94%D0%B5%D0%BD%D0%B8%D1%81%20%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B5%D0%B2%D0%B8%D1%87&answer_fnpp=1457879&answer_status=%D1%81%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82&answer_formedu=%D0%9E%D1%87%D0%BD%D0%B0%D1%8F&gr=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F%20%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F&degree_of_education=%D0%91%D0%B0%D0%BA%D0%B0%D0%BB%D0%B0%D0%B2%D1%80%D0%B8%D0%B0%D1%82&age=18&faculty=%D0%A4%D0%B0%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D0%B5%D1%82%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85%20%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9%20%D0%B8%20%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D1%85%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC&group=%D0%9C%D0%9E-231:24:1857
+
+JavaScript warning: https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js, line 868: Script terminated by timeout at:
+ll/<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:868:47
+
+1699031571597	Marionette	INFO	Stopped listening on port 57119
+Dynamically enable window occlusion 1
+1699031601860	geckodriver	INFO	Listening on 127.0.0.1:57517
+1699031604947	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "57518" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofileVKT3Sa"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699031605421	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699031605549	Marionette	INFO	Listening on port 57528
+WebDriver BiDi listening on ws://127.0.0.1:57518
+Read port: 57528
+1699031605838	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:57518/devtools/browser/3fb3e54b-bbb8-4c71-8ed8-a2bf5576bbc0
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 39: Script terminated by timeout at:
+g@https://top-fwz1.mail.ru/js/code.js:39:361
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://forms.yandex.ru/cloud/643e643b3e9d0801f714ab9c/?iframe=1&groups=%D0%9C%D0%9E-231&codespec=02.03.03&spec=%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5+%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B5+%D0%B8+%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5+%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85+%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC&course=1&profname=&faculty=%D0%A4%D0%B0%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D0%B5%D1%82+%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85+%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9+%D0%B8+%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D1%85+%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC&formedu=%D0%9E%D1%87%D0%BD%D0%B0%D1%8F&citizenship=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F+%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F, line 1055: Script terminated by timeout at:
+n@https://forms.yandex.ru/cloud/643e643b3e9d0801f714ab9c/?iframe=1&groups=%D0%9C%D0%9E-231&codespec=02.03.03&spec=%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5+%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B5+%D0%B8+%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5+%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85+%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC&course=1&profname=&faculty=%D0%A4%D0%B0%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D0%B5%D1%82+%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85+%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9+%D0%B8+%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D1%85+%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC&formedu=%D0%9E%D1%87%D0%BD%D0%B0%D1%8F&citizenship=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F+%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F:1055:2891
+
+JavaScript warning: https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js, line 884: Script terminated by timeout at:
+R@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:884:131
+Yx<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:1874:98
+ll/<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:868:63
+
+1699031619759	Marionette	INFO	Stopped listening on port 57528
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+1699031670768	geckodriver	INFO	Listening on 127.0.0.1:57947
+1699031673830	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "57948" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofileqkZA7D"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699031674305	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699031674399	Marionette	INFO	Listening on port 57963
+WebDriver BiDi listening on ws://127.0.0.1:57948
+Read port: 57963
+1699031674629	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:57948/devtools/browser/dcc8897c-c8a9-44e3-8895-e769c72bd2b2
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js, line 868: Script terminated by timeout at:
+ll/<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:868:47
+
+1699031689443	Marionette	INFO	Stopped listening on port 57963
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+1699031763761	geckodriver	INFO	Listening on 127.0.0.1:58503
+1699031766837	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "58504" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofileiUq0Wb"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699031767293	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699031767383	Marionette	INFO	Listening on port 58512
+WebDriver BiDi listening on ws://127.0.0.1:58504
+Read port: 58512
+1699031767673	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:58504/devtools/browser/4700c57c-2f68-4a81-964d-2f381cabdd82
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js, line 884: Script terminated by timeout at:
+R@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:884:131
+Yx<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:1874:98
+ll/<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:868:63
+
+1699031782980	Marionette	INFO	Stopped listening on port 58512
+Dynamically enable window occlusion 1
+1699031808315	geckodriver	INFO	Listening on 127.0.0.1:58898
+1699031811394	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "58899" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofilew0dZRM"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699031811849	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699031811939	Marionette	INFO	Listening on port 58911
+WebDriver BiDi listening on ws://127.0.0.1:58899
+Read port: 58911
+1699031812170	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:58899/devtools/browser/d21c68ae-cefd-42b6-a158-f282c1ed5435
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js, line 868: Script terminated by timeout at:
+ll/<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:868:47
+
+1699031826568	Marionette	INFO	Stopped listening on port 58911
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+1699031996084	geckodriver	INFO	Listening on 127.0.0.1:59570
+1699031999144	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "59571" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofilePPmuvQ"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699031999651	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699031999740	Marionette	INFO	Listening on port 59583
+WebDriver BiDi listening on ws://127.0.0.1:59571
+Read port: 59583
+1699031999963	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:59571/devtools/browser/43ed6e35-14ce-407c-b6cd-261e3641d8cd
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 14: Script terminated by timeout at:
+Ab@https://top-fwz1.mail.ru/js/code.js:14:209
+k.prototype.unload@https://top-fwz1.mail.ru/js/code.js:84:193
+Ea@https://top-fwz1.mail.ru/js/code.js:22:121
+
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js, line 868: Script terminated by timeout at:
+ll/<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:868:47
+
+1699032013946	Marionette	INFO	Stopped listening on port 59583
+Dynamically enable window occlusion 1
+1699032166545	geckodriver	INFO	Listening on 127.0.0.1:60328
+1699032169776	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "60329" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofilemVnFKK"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699032170364	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699032170462	Marionette	INFO	Listening on port 60338
+WebDriver BiDi listening on ws://127.0.0.1:60329
+Read port: 60338
+1699032170705	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:60329/devtools/browser/bac2c899-5f07-4f48-ad98-c5580ab4e3bc
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js, line 868: Script terminated by timeout at:
+ll/<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:868:47
+
+1699032184872	Marionette	INFO	Stopped listening on port 60338
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+1699032478306	geckodriver	INFO	Listening on 127.0.0.1:61145
+1699032481350	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "61146" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofilet658N3"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699032481844	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699032481941	Marionette	INFO	Listening on port 61158
+WebDriver BiDi listening on ws://127.0.0.1:61146
+Read port: 61158
+1699032482171	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:61146/devtools/browser/a57016a9-b032-4ca9-802e-649ec434996b
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js, line 884: Script terminated by timeout at:
+R@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:884:131
+Yx<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:1874:98
+ll/<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:868:63
+
+1699032495292	Marionette	INFO	Stopped listening on port 61158
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+1699073496667	geckodriver	INFO	Listening on 127.0.0.1:52399
+1699073499649	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "52400" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofileQIGdMk"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699073500148	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699073500245	Marionette	INFO	Listening on port 52408
+WebDriver BiDi listening on ws://127.0.0.1:52400
+Read port: 52408
+1699073500490	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52400/devtools/browser/caa1b5a9-d968-4389-ad38-78afa376b1ba
+1699073531936	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1699073769555	geckodriver	INFO	Listening on 127.0.0.1:52667
+1699073772594	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "52668" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofileVsVgAN"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699073773036	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699073773122	Marionette	INFO	Listening on port 52679
+WebDriver BiDi listening on ws://127.0.0.1:52668
+Read port: 52679
+1699073773306	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52668/devtools/browser/7ed2c582-f6a8-415e-9993-2409f4ff0af0
+1699073825945	geckodriver	INFO	Listening on 127.0.0.1:52844
+1699073829011	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "52845" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofileLfC1hy"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699073829443	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699073829528	Marionette	INFO	Listening on port 52853
+WebDriver BiDi listening on ws://127.0.0.1:52845
+Read port: 52853
+1699073829737	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52845/devtools/browser/d3f7542b-533d-4a7d-a876-c9a9cbea1531
+1699073859501	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1699074134720	Marionette	INFO	Stopped listening on port 52853
+Dynamically enable window occlusion 1
+1699242131719	geckodriver	INFO	Listening on 127.0.0.1:61959
+1699242134816	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "61960" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofile6bJg59"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699242135667	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699242135777	Marionette	INFO	Listening on port 61967
+WebDriver BiDi listening on ws://127.0.0.1:61960
+Read port: 61967
+1699242136029	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:61960/devtools/browser/6b377710-910e-4973-80b6-bec9d890395f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+1699242150824	Marionette	INFO	Stopped listening on port 61967
+1699242197579	geckodriver	INFO	Listening on 127.0.0.1:62321
+1699242200623	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "62322" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofilebAJfJu"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699242201117	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699242201212	Marionette	INFO	Listening on port 62330
+WebDriver BiDi listening on ws://127.0.0.1:62322
+Read port: 62330
+1699242201461	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:62322/devtools/browser/24aabd8b-25a9-41c4-a048-0942d8b65747
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js, line 884: Script terminated by timeout at:
+R@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:884:131
+Yx<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:1874:98
+ll/<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:868:63
+
+1699242214851	Marionette	INFO	Stopped listening on port 62330
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function
+1699242376892	geckodriver	INFO	Listening on 127.0.0.1:62934
+1699242379961	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "62935" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofileEn1NpL"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699242380429	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699242380517	Marionette	INFO	Listening on port 62944
+WebDriver BiDi listening on ws://127.0.0.1:62935
+Read port: 62944
+1699242380697	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:62935/devtools/browser/55a6ddd0-d6bb-4c3e-aaf3-fe608b9b4577
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js, line 155: Script terminated by timeout at:
+g.Ka@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:155:14
+g.k.Yl@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:7704:62
+An.prototype.r_@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:7828:109
+qI.prototype.z0@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:8935:41
+g.k.invoke@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:8926:64
+WKa@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:3976:47
+g.$Ka/a.c1a@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:3982:276
+g.aLa@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:3985:167
+g.k.CR@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:12247:77
+g.k.sendAbandonmentPing@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:12136:102
+g.k.sendAbandonmentPing@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:10236:62
+XT/a.state.j[b]@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:4756:53
+Ix/<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:1834:107
+Ux@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:1867:46
+Yx<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:1874:183
+ll/<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:868:63
+
+1699242393202	Marionette	INFO	Stopped listening on port 62944
+Dynamically enable window occlusion 1
+1699242570505	geckodriver	INFO	Listening on 127.0.0.1:63507
+1699242573533	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "63508" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofile63Rnlb"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699242573969	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699242574057	Marionette	INFO	Listening on port 63521
+WebDriver BiDi listening on ws://127.0.0.1:63508
+Read port: 63521
+1699242574265	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:63508/devtools/browser/c9855e8b-a480-4a85-8401-a0b6d8b4c054
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js, line 884: Script terminated by timeout at:
+R@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:884:131
+Yx<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:1874:98
+ll/<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:868:63
+
+1699242586641	Marionette	INFO	Stopped listening on port 63521
+Dynamically enable window occlusion 1
+1699242607279	geckodriver	INFO	Listening on 127.0.0.1:63866
+1699242610296	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "63867" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofilegLveC4"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699242610896	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699242611051	Marionette	INFO	Listening on port 64075
+WebDriver BiDi listening on ws://127.0.0.1:63867
+Read port: 64075
+1699242611337	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:63867/devtools/browser/68c21ee1-6298-43e3-894e-432b6a7e7543
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js, line 884: Script terminated by timeout at:
+R@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:884:131
+Yx<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:1874:98
+ll/<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:868:63
+
+1699242625157	Marionette	INFO	Stopped listening on port 64075
+Dynamically enable window occlusion 1
+1699243006425	geckodriver	INFO	Listening on 127.0.0.1:64807
+1699243009481	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "64808" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofileupnaXc"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699245829863	geckodriver	INFO	Listening on 127.0.0.1:56456
+1699245832864	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "--remote-debugging-port" "56457" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\user\\AppData\\Local\\Temp\\rust_mozprofilea0uV2Q"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699245835781	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1699245835882	Marionette	INFO	Listening on port 56473
+WebDriver BiDi listening on ws://127.0.0.1:56457
+Read port: 56473
+1699245836191	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:56457/devtools/browser/426e7018-163f-4708-ad72-060bc43ad08d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://omgtu.ru."
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 5: Script terminated by timeout at:
+z@https://top-fwz1.mail.ru/js/code.js:5:174
+g@https://top-fwz1.mail.ru/js/code.js:39:132
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://top-fwz1.mail.ru/js/code.js, line 39: Script terminated by timeout at:
+g@https://top-fwz1.mail.ru/js/code.js:39:361
+b@https://top-fwz1.mail.ru/js/code.js:39:15
+
+JavaScript warning: https://www.google.com/js/th/zEfCWrJsF8GWq2CtYueXG8skkVl11z8HN4Cg9ySc7ro.js line 2 > eval line 2842 > eval line 1 > eval line 1 > eval, line 1: Script terminated by timeout at:
+nO@https://www.google.com/js/th/zEfCWrJsF8GWq2CtYueXG8skkVl11z8HN4Cg9ySc7ro.js line 2 > eval line 2842 > eval line 1 > eval line 1 > eval:1:53
+zg@https://www.google.com/js/th/zEfCWrJsF8GWq2CtYueXG8skkVl11z8HN4Cg9ySc7ro.js line 2 > eval line 2842 > eval line 1 > eval line 1 > eval:1:89
+@https://www.google.com/js/th/zEfCWrJsF8GWq2CtYueXG8skkVl11z8HN4Cg9ySc7ro.js line 2 > eval line 2842 > eval line 1 > eval line 1 > eval:1:17
+QD@https://www.google.com/js/th/zEfCWrJsF8GWq2CtYueXG8skkVl11z8HN4Cg9ySc7ro.js line 2 > eval line 2842 > eval line 1 > eval line 1 > eval:1:197
+Tg@https://www.google.com/js/th/zEfCWrJsF8GWq2CtYueXG8skkVl11z8HN4Cg9ySc7ro.js line 2 > eval line 2842 > eval line 1 > eval line 1 > eval:1:40
+y.prototype.u</<@https://www.google.com/js/th/zEfCWrJsF8GWq2CtYueXG8skkVl11z8HN4Cg9ySc7ro.js line 2 > eval:2842:35693
+Zf@https://www.google.com/js/th/zEfCWrJsF8GWq2CtYueXG8skkVl11z8HN4Cg9ySc7ro.js line 2 > eval:2842:24572
+CO@https://www.google.com/js/th/zEfCWrJsF8GWq2CtYueXG8skkVl11z8HN4Cg9ySc7ro.js line 2 > eval:2842:12821
+u@https://www.google.com/js/th/zEfCWrJsF8GWq2CtYueXG8skkVl11z8HN4Cg9ySc7ro.js line 2 > eval:2842:7769
+I@https://www.google.com/js/th/zEfCWrJsF8GWq2CtYueXG8skkVl11z8HN4Cg9ySc7ro.js line 2 > eval line 2842 > eval line 1 > eval line 1 > eval:1:208
+U.ED@https://www.google.com/js/th/zEfCWrJsF8GWq2CtYueXG8skkVl11z8HN4Cg9ySc7ro.js line 2 > eval:2842:34840
+qs@https://www.google.com/js/th/zEfCWrJsF8GWq2CtYueXG8skkVl11z8HN4Cg9ySc7ro.js line 2 > eval:2842:2745
+$k.AYS_/<@https://www.google.com/js/th/zEfCWrJsF8GWq2CtYueXG8skkVl11z8HN4Cg9ySc7ro.js line 2 > eval:2842:37517
+An.prototype.r_@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:7828:153
+qI.prototype.z0@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:8935:41
+g.k.invoke@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:8926:64
+WKa@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:3976:47
+g.$Ka/a.c1a@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:3982:276
+g.aLa@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:3985:167
+g.k.CR@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:12247:77
+g.k.sendAbandonmentPing@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:12136:102
+g.k.sendAbandonmentPing@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:10236:62
+XT/a.state.j[b]@https://www.youtube.com/s/player/9d15588c/player_ias.vflset/ru_RU/base.js:4756:53
+Ix/<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:1834:107
+Ux@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:1867:46
+Yx<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:1874:183
+ll/<@https://www.youtube.com/s/player/9d15588c/www-embed-player.vflset/www-embed-player.js:868:63
+
+1699245849879	Marionette	INFO	Stopped listening on port 56473
+Dynamically enable window occlusion 1

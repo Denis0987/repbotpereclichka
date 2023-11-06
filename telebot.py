@@ -7,10 +7,19 @@ import time
 import asyncio
 import random
 
+
+from namepar import GainNamePar
 from secrets import TOKEN
 
+massnamepar = GainNamePar()
+print(massnamepar)
+count = 1
+message = ""
+for name in massnamepar:
+    message += "(" + str(count) + ") " + str(name[1]) + " - " + str(name[3]) + "\n"
+    count+=1
 
-message = "Кто присутсвовал?"
+message += "\n" + "Кто присутсвовал?"
 callback_value = []
 students = {}
 temporarily_names = []
@@ -21,7 +30,17 @@ query_text_last = ""
 with open("table.json", encoding='utf-8') as f:
     ID_TABLE = json.load(f)
 
-
+keyboard = [
+    [
+        InlineKeyboardButton("Присутствовал", callback_data=1),
+        InlineKeyboardButton("Отсутствовал по ув.п.", callback_data=4),
+        InlineKeyboardButton("Др. подгруппа", callback_data=5),
+    ],
+    [
+        InlineKeyboardButton("Отмена", callback_data=2),
+        InlineKeyboardButton("Отметить", callback_data=3),
+    ]
+]
 async def hello(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(f'Hello, {update.effective_user.first_name}')
 
@@ -38,16 +57,7 @@ async def perekl(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user_id = update.message.from_user.id
     print(ID_TABLE["admin"], user_id)
     if(str(user_id) == str(ID_TABLE["admin"])):
-        keyboard = [
-            [
-            InlineKeyboardButton("Присутствовал", callback_data=1),
-            InlineKeyboardButton("Отсутствовал по ув.п.", callback_data=4),
-            ],
-            [
-            InlineKeyboardButton("Отмена", callback_data=2),
-            InlineKeyboardButton("Отметить", callback_data=3),
-            ]
-        ]
+
         reply_markup = InlineKeyboardMarkup(keyboard)
 
         await update.message.reply_text(message, reply_markup=reply_markup)
@@ -57,16 +67,6 @@ async def perekl(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 
 async def buttons(update, context):
-    keyboard = [
-        [
-            InlineKeyboardButton("Присутствовал", callback_data=1),
-            InlineKeyboardButton("Отсутствовал по ув.п.", callback_data=4),
-        ],
-        [
-            InlineKeyboardButton("Отмена", callback_data=2),
-            InlineKeyboardButton("Отметить", callback_data=3)
-        ]
-        ]
     query = update.callback_query
     user_id = str(query.from_user.id)
     reply_markup = InlineKeyboardMarkup(keyboard)
@@ -74,7 +74,13 @@ async def buttons(update, context):
         if int(query.data) != 3 and int(query.data) != 2:
             name = ID_TABLE[user_id]
             if not (name in arr_fio_users):
-                temporarily_names.append(name)
+                if int(query.data) == 1:
+                    type_button = " - Пр"
+                elif int(query.data) == 4:
+                    type_button = " - От/У"
+                elif int(query.data) == 5:
+                    type_button = " - Др/ПГ"
+                temporarily_names.append(name + type_button)
                 name_user = json.dumps(temporarily_names, indent=4)
                 with open("bd_add_user.json", "w", encoding="utf-8") as f:
                     f.write(name_user)
@@ -96,6 +102,8 @@ async def buttons(update, context):
             callback_value.remove(name + "1")
         if name + "4" in callback_value:
             callback_value.remove(name + "4")
+        if name + "5" in callback_value:
+            callback_value.remove(name + "5")
         if name in arr_fio_users:
             arr_fio_users.remove(name)
         callback_value.append(name + "1")
@@ -105,9 +113,22 @@ async def buttons(update, context):
             callback_value.remove(name + "1")
         if name + "4" in callback_value:
             callback_value.remove(name + "4")
+        if name + "5" in callback_value:
+            callback_value.remove(name + "5")
         if name in arr_fio_users:
             arr_fio_users.remove(name)
         callback_value.append(name + "4")
+        arr_fio_users.append(name)
+    elif int(query.data) == 5:
+        if name + "1" in callback_value:
+            callback_value.remove(name + "1")
+        if name + "4" in callback_value:
+            callback_value.remove(name + "4")
+        if name + "5" in callback_value:
+            callback_value.remove(name + "5")
+        if name in arr_fio_users:
+            arr_fio_users.remove(name)
+        callback_value.append(name + "5")
         arr_fio_users.append(name)
 
     elif int(query.data) == 2 and name in query_text:
@@ -119,6 +140,8 @@ async def buttons(update, context):
             callback_value.remove(name + "1")
         if name + "4" in callback_value:
             callback_value.remove(name + "4")
+        if name + "5" in callback_value:
+            callback_value.remove(name + "5")
         with open("bd_add_user.json", "r+", encoding="utf-8") as f:
             temporarily_names_arr = json.load(f)
             print(temporarily_names_arr)

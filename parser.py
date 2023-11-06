@@ -45,6 +45,8 @@ def checkPresent():
                             elif(people[person] == 4):
                                 val = col.find("select")["name"]
                                 values[val] = 2
-    
+                            elif (people[person] == 5):
+                                val = col.find("select")["name"]
+                                values[val] = 4
     r = requests.post(URL, data=values, cookies=cookies)
     print(r)
