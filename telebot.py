@@ -14,11 +14,21 @@ from secrets import TOKEN
 massnamepar = GainNamePar()
 print(massnamepar)
 count = 1
+keyboard = []
 message = ""
 for name in massnamepar:
     message += "(" + str(count) + ") " + str(name[1]) + " - " + str(name[3]) + "\n"
-    count+=1
-
+    keyboard.append([
+        InlineKeyboardButton("(" + str(count) + ")" + " ПР", callback_data=count),
+        InlineKeyboardButton("(" + str(count) + ")" + " От/УвП", callback_data=count+1),
+        InlineKeyboardButton("(" + str(count) + ")" + " Др/П", callback_data=count+2)
+    ])
+    count+=3
+keyboard.append([
+        InlineKeyboardButton("Отмена", callback_data=99),
+        InlineKeyboardButton("Отметить", callback_data=98),
+    ])
+print(keyboard)
 message += "\n" + "Кто присутсвовал?"
 callback_value = []
 students = {}
@@ -27,20 +37,11 @@ queue = asyncio.Queue()
 arr_fio_users = []
 tasks = []
 query_text_last = ""
+type_button = " - Др/ПГ"
+
 with open("table.json", encoding='utf-8') as f:
     ID_TABLE = json.load(f)
 
-keyboard = [
-    [
-        InlineKeyboardButton("Присутствовал", callback_data=1),
-        InlineKeyboardButton("Отсутствовал по ув.п.", callback_data=4),
-        InlineKeyboardButton("Др. подгруппа", callback_data=5),
-    ],
-    [
-        InlineKeyboardButton("Отмена", callback_data=2),
-        InlineKeyboardButton("Отметить", callback_data=3),
-    ]
-]
 async def hello(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(f'Hello, {update.effective_user.first_name}')
 
@@ -67,20 +68,38 @@ async def perekl(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 
 async def buttons(update, context):
+    global type_button
     query = update.callback_query
     user_id = str(query.from_user.id)
     reply_markup = InlineKeyboardMarkup(keyboard)
     if user_id in ID_TABLE:
-        if int(query.data) != 3 and int(query.data) != 2:
-            name = ID_TABLE[user_id]
-            if not (name in arr_fio_users):
-                if int(query.data) == 1:
-                    type_button = " - Пр"
-                elif int(query.data) == 4:
-                    type_button = " - От/У"
-                elif int(query.data) == 5:
-                    type_button = " - Др/ПГ"
-                temporarily_names.append(name + type_button)
+        name = ID_TABLE[user_id]
+        if int(query.data) != 98 and int(query.data) != 99:
+            NumberOfButtons = len(massnamepar) * 3
+            PressedButton = int(query.data)
+            RowCounter = 1
+            print(name+ str(RowCounter))
+            print(arr_fio_users)
+            if name+ str(RowCounter) in arr_fio_users:
+                arr_fio_users.remove(name+ str(RowCounter))
+            for i in range(1, NumberOfButtons):
+                if i == PressedButton:
+                    if PressedButton == RowCounter:
+                        type_button = " - Пр"
+                        arr_fio_users.append(name + str(RowCounter))
+                        break
+                    elif PressedButton == RowCounter+1:
+                        type_button = " - От/УвП"
+                        arr_fio_users.append(name + str(RowCounter))
+                        break
+                    else:
+                        arr_fio_users.append(name + str(RowCounter))
+
+
+                    if i %3 == 0 and i not in (1, 2, 3):
+                        RowCounter+=1
+                temporarily_names.append(name + " (" + str(RowCounter) + ")" + type_button)
+                type_button = " - Др/ПГ"
                 name_user = json.dumps(temporarily_names, indent=4)
                 with open("bd_add_user.json", "w", encoding="utf-8") as f:
                     f.write(name_user)
@@ -96,6 +115,16 @@ async def buttons(update, context):
         query_text = "\n".join([f"{message} ({len_arr_names})\n"] + temporarily_names_arr)
         if query_text != query.message.text:
             await query.edit_message_text(text=f"{query_text}", reply_markup=reply_markup)
+
+
+
+
+
+
+
+
+
+
     name = ID_TABLE[user_id]
     if int(query.data) == 1:
         if name + "1" in callback_value:
@@ -131,7 +160,7 @@ async def buttons(update, context):
         callback_value.append(name + "5")
         arr_fio_users.append(name)
 
-    elif int(query.data) == 2 and name in query_text:
+    elif int(query.data) == 99 and name in query_text:
         with open("bd_add_user.json", "w", encoding="utf-8") as f:
             temporarily_names.remove(name)
             json.dump(temporarily_names, f)
@@ -149,7 +178,7 @@ async def buttons(update, context):
             query_text = "\n".join([f"{message} ({len_arr_names})\n"] + temporarily_names_arr)
             await query.edit_message_text(text=f"{query_text}", reply_markup=reply_markup)
 
-    elif int(query.data) == 3:
+    elif int(query.data) == 98:
         if user_id == ID_TABLE["admin"]:
             await query.edit_message_text(text=f"{query_text}", reply_markup='')
             with open("present_names.json", "w", encoding="utf-8") as f:

@@ -1,3 +1,5 @@
+import time
+
 from selenium import webdriver
 from time import sleep
 import json
@@ -55,7 +57,7 @@ def get_cockies():
                 break
         else:
             print("Куки не найдены")
-        driver.close()
+        #driver.close()
         with open("cookie.json", "w", encoding="utf-8") as f:
             cookie["STUDSESSID"] = ready_cockie
             json.dump(cookie, f, ensure_ascii=False, indent=4)
