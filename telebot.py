@@ -6,6 +6,7 @@ import json
 import time
 import asyncio
 import random
+import math
 
 
 from namepar import GainNamePar
@@ -13,25 +14,26 @@ from secrets import TOKEN
 
 massnamepar = GainNamePar()
 print(massnamepar)
-count = 1
+datacallback = 1
+count2 = 1
 keyboard = []
 message = ""
 for name in massnamepar:
-    message += "(" + str(count) + ") " + str(name[1]) + " - " + str(name[3]) + "\n"
+    message += "(" + str(count2) + ") " + str(name[1]) + " - " + str(name[3]) + "\n"
     keyboard.append([
-        InlineKeyboardButton("(" + str(count) + ")" + " ПР", callback_data=count),
-        InlineKeyboardButton("(" + str(count) + ")" + " От/УвП", callback_data=count+1),
-        InlineKeyboardButton("(" + str(count) + ")" + " Др/П", callback_data=count+2)
+        InlineKeyboardButton("(" + str(count2) + ")" + " ПР", callback_data=datacallback),
+        InlineKeyboardButton("(" + str(count2) + ")" + " От/УвП", callback_data=datacallback+1),
+        InlineKeyboardButton("(" + str(count2) + ")" + " Др/П", callback_data=datacallback+2)
     ])
-    count+=3
+    datacallback+=3
+    count2+=1
 keyboard.append([
-        InlineKeyboardButton("Отмена", callback_data=99),
         InlineKeyboardButton("Отметить", callback_data=98),
     ])
 print(keyboard)
 message += "\n" + "Кто присутсвовал?"
 callback_value = []
-students = {}
+students = []
 temporarily_names = []
 queue = asyncio.Queue()
 arr_fio_users = []
@@ -74,35 +76,36 @@ async def buttons(update, context):
     reply_markup = InlineKeyboardMarkup(keyboard)
     if user_id in ID_TABLE:
         name = ID_TABLE[user_id]
+        namesplit = name.split()
         if int(query.data) != 98 and int(query.data) != 99:
             NumberOfButtons = len(massnamepar) * 3
             PressedButton = int(query.data)
-            RowCounter = 1
-            print(name+ str(RowCounter))
-            print(arr_fio_users)
+            RowCounter = math.ceil(int(query.data)/3)
+            print(RowCounter)
             if name+ str(RowCounter) in arr_fio_users:
-                arr_fio_users.remove(name+ str(RowCounter))
-            for i in range(1, NumberOfButtons):
-                if i == PressedButton:
-                    if PressedButton == RowCounter:
-                        type_button = " - Пр"
-                        arr_fio_users.append(name + str(RowCounter))
-                        break
-                    elif PressedButton == RowCounter+1:
-                        type_button = " - От/УвП"
-                        arr_fio_users.append(name + str(RowCounter))
-                        break
-                    else:
-                        arr_fio_users.append(name + str(RowCounter))
-
-
-                    if i %3 == 0 and i not in (1, 2, 3):
-                        RowCounter+=1
-                temporarily_names.append(name + " (" + str(RowCounter) + ")" + type_button)
-                type_button = " - Др/ПГ"
-                name_user = json.dumps(temporarily_names, indent=4)
-                with open("bd_add_user.json", "w", encoding="utf-8") as f:
-                    f.write(name_user)
+                arr_fio_users.remove(name + str(RowCounter))
+                beginning = str(namesplit[0]) + " " + str(namesplit[1][0]) + "." + str(namesplit[2][0]) + "."  + " (" + str(RowCounter) + ")"
+                for word in temporarily_names:
+                    if beginning in word[:len(beginning)]:
+                        temporarily_names.remove(word)
+                    # temporarily_names.remove(name + " (" + str(RowCounter) + ")" + type_button)
+            if not(name+ str(RowCounter) in arr_fio_users):
+                for i in range(1, NumberOfButtons):
+                    if i == PressedButton:
+                        if PressedButton == RowCounter*3 - 2:
+                            type_button = " - Пр"
+                            break
+                        elif PressedButton == RowCounter*3 - 1:
+                            type_button = " - От/УвП"
+                            break
+            arr_fio_users.append(name + str(RowCounter))
+            temporarily_names.append(str(namesplit[0]) + " " + str(namesplit[1][0]) + "." + str(namesplit[2][0]) + "." + " (" + str(RowCounter) + ")" + type_button)
+            type_button = " - Др/ПГ"
+            temporarily_names.sort()
+            name_user = json.dumps(temporarily_names, indent=4)
+            with open("bd_add_user.json", "w", encoding="utf-8") as f:
+                print(name_user)
+                f.write(name_user)
     #                name_sorting = sorted([name] + query_text[2:])
     #                people = str(len(name_sorting))
     #                query_text = "\n".join([f"{message} ({people})\n"] + name_sorting)
@@ -116,75 +119,39 @@ async def buttons(update, context):
         if query_text != query.message.text:
             await query.edit_message_text(text=f"{query_text}", reply_markup=reply_markup)
 
-
-
-
-
-
-
-
-
-
     name = ID_TABLE[user_id]
-    if int(query.data) == 1:
-        if name + "1" in callback_value:
-            callback_value.remove(name + "1")
-        if name + "4" in callback_value:
-            callback_value.remove(name + "4")
-        if name + "5" in callback_value:
-            callback_value.remove(name + "5")
-        if name in arr_fio_users:
-            arr_fio_users.remove(name)
-        callback_value.append(name + "1")
+    if int(query.data) != 98:
+        beginning = str(name)+ "-" + str(math.ceil(int(query.data)/3))
+        for word in callback_value:
+            if beginning in word[:len(beginning)]:
+                callback_value.remove(word)
+        callback_value.append(str(name)+ "-" + str(math.ceil(int(query.data)/3)) + "-" + str(query.data))
         arr_fio_users.append(name)
-    elif int(query.data) == 4:
-        if name + "1" in callback_value:
-            callback_value.remove(name + "1")
-        if name + "4" in callback_value:
-            callback_value.remove(name + "4")
-        if name + "5" in callback_value:
-            callback_value.remove(name + "5")
-        if name in arr_fio_users:
-            arr_fio_users.remove(name)
-        callback_value.append(name + "4")
-        arr_fio_users.append(name)
-    elif int(query.data) == 5:
-        if name + "1" in callback_value:
-            callback_value.remove(name + "1")
-        if name + "4" in callback_value:
-            callback_value.remove(name + "4")
-        if name + "5" in callback_value:
-            callback_value.remove(name + "5")
-        if name in arr_fio_users:
-            arr_fio_users.remove(name)
-        callback_value.append(name + "5")
-        arr_fio_users.append(name)
-
-    elif int(query.data) == 99 and name in query_text:
-        with open("bd_add_user.json", "w", encoding="utf-8") as f:
-            temporarily_names.remove(name)
-            json.dump(temporarily_names, f)
-        arr_fio_users.remove(name)
-        if name + "1" in callback_value:
-            callback_value.remove(name + "1")
-        if name + "4" in callback_value:
-            callback_value.remove(name + "4")
-        if name + "5" in callback_value:
-            callback_value.remove(name + "5")
-        with open("bd_add_user.json", "r+", encoding="utf-8") as f:
-            temporarily_names_arr = json.load(f)
-            print(temporarily_names_arr)
-            len_arr_names = len(temporarily_names_arr)
-            query_text = "\n".join([f"{message} ({len_arr_names})\n"] + temporarily_names_arr)
-            await query.edit_message_text(text=f"{query_text}", reply_markup=reply_markup)
+    # elif int(query.data) == 99 and name in query_text:
+    #     with open("bd_add_user.json", "w", encoding="utf-8") as f:
+    #         temporarily_names.remove(name)
+    #         json.dump(temporarily_names, f)
+    #     arr_fio_users.remove(name)
+    #     if name + "1" in callback_value:
+    #         callback_value.remove(name + "1")
+    #     if name + "4" in callback_value:
+    #         callback_value.remove(name + "4")
+    #     if name + "5" in callback_value:
+    #         callback_value.remove(name + "5")
+    #     with open("bd_add_user.json", "r+", encoding="utf-8") as f:
+    #         temporarily_names_arr = json.load(f)
+    #         print(temporarily_names_arr)
+    #         len_arr_names = len(temporarily_names_arr)
+    #         query_text = "\n".join([f"{message} ({len_arr_names})\n"] + temporarily_names_arr)
+    #         await query.edit_message_text(text=f"{query_text}", reply_markup=reply_markup)
 
     elif int(query.data) == 98:
         if user_id == ID_TABLE["admin"]:
             await query.edit_message_text(text=f"{query_text}", reply_markup='')
             with open("present_names.json", "w", encoding="utf-8") as f:
-                print(arr_fio_users,callback_value)
-                for count_value in range(len_arr_names):
-                    students[arr_fio_users[count_value]] = int(callback_value[count_value][-1])
+        #        for count_value in range(len_arr_names):
+                students.append(callback_value)
+                print(students)
                 json.dump(students, f, ensure_ascii=False, indent=4)
             from parser import checkPresent
             checkPresent()
@@ -194,7 +161,6 @@ async def buttons(update, context):
     #        else:
     #            print(query.from_user)
     # time.sleep(0.5)
-
 
 async def worker():
     while True:

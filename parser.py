@@ -12,10 +12,9 @@ def checkPresent():
         # people = [name.upper() for name in json.load(f)]
         people = json.load(f)
     values = dict()
-    arr_selected_value = []
+    arr_selected_value = people
 
-    for count_value in people:
-        arr_selected_value.append(people[count_value])
+    #for count_value in people:
     print(arr_selected_value)
 
     with requests.Session() as s:
@@ -31,22 +30,34 @@ def checkPresent():
 
         table = block.tbody
         table_rows = table.find_all("tr")
-
+        people = people[0]
+        print(people)
         for row in table_rows:
             name = row.th.get_text().upper()
             for person in people:
-                if person.upper() == name:
+                colcount = 0
+                print(person)
+                person = person.split("-")
+                nameperson = person[0]
+                numparperson = int(person[1])
+                #if numparperson != 1:
+               #     numparperson+=2
+                typeparperson = int(person[2])%3
+                if nameperson.upper() == name:
                     columns = row.find_all("td")
                     for col in columns:
+                        print(colcount, numparperson, typeparperson)
                         if bool(col.find_all()):
-                            if(people[person] == 1):
-                                val = col.find("select")["name"]
-                                values[val] = 1
-                            elif(people[person] == 4):
-                                val = col.find("select")["name"]
-                                values[val] = 2
-                            elif (people[person] == 5):
-                                val = col.find("select")["name"]
-                                values[val] = 4
+                            colcount +=1
+                            if colcount == numparperson:
+                                    if(typeparperson == 0):
+                                        val = col.find("select")["name"]
+                                        values[val] = 4
+                                    elif(typeparperson == 1):
+                                        val = col.find("select")["name"]
+                                        values[val] = 1
+                                    elif (typeparperson == 2):
+                                        val = col.find("select")["name"]
+                                        values[val] = 2
     r = requests.post(URL, data=values, cookies=cookies)
     print(r)
