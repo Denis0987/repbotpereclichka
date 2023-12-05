@@ -59,5 +59,10 @@ def checkPresent():
                                     elif (typeparperson == 2):
                                         val = col.find("select")["name"]
                                         values[val] = 2
+    with open("bd_add_user.json", "w") as file:
+        file.truncate()
+    with open("present_names.json", "w") as file:
+        file.truncate()
+
     r = requests.post(URL, data=values, cookies=cookies)
     print(r)

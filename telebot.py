@@ -23,7 +23,8 @@ for name in massnamepar:
     keyboard.append([
         InlineKeyboardButton("(" + str(count2) + ")" + " ПР", callback_data=datacallback),
         InlineKeyboardButton("(" + str(count2) + ")" + " От/УвП", callback_data=datacallback+1),
-        InlineKeyboardButton("(" + str(count2) + ")" + " Др/П", callback_data=datacallback+2)
+        InlineKeyboardButton("(" + str(count2) + ")" + " Др/ПГ", callback_data=datacallback+2)
+
     ])
     datacallback+=3
     count2+=1
@@ -39,7 +40,7 @@ queue = asyncio.Queue()
 arr_fio_users = []
 tasks = []
 query_text_last = ""
-type_button = " - Др/ПГ"
+type_button = " - Др/ПГ" # обновляется сама
 
 with open("table.json", encoding='utf-8') as f:
     ID_TABLE = json.load(f)
@@ -157,7 +158,10 @@ async def buttons(update, context):
             checkPresent()
             query_text = query.message.text
             await query.edit_message_text(text=f"{query_text}\nОтметил🎉", reply_markup='')
-
+            students.clear()
+            arr_fio_users.clear()
+            callback_value.clear()
+            temporarily_names.clear()
     #        else:
     #            print(query.from_user)
     # time.sleep(0.5)
