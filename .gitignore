@@ -1,4 +1,6 @@
 
 repbotpereclichka.rar
 .idea/workspace.xml
-python-telegram-bot/
+venv/Lib/site-packages/python-telegram-bot/
+видов
+__pycache__/

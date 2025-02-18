@@ -41,7 +41,7 @@ def checkPresent():
                 nameperson = person[0]
                 numparperson = int(person[1])
                 #if numparperson != 1:
-               #     numparperson+=2
+                #    numparperson+=2
                 typeparperson = int(person[2])%3
                 if nameperson.upper() == name:
                     columns = row.find_all("td")

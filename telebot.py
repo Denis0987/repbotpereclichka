@@ -1,23 +1,23 @@
-import time
+import asyncio
+import json
+import math
+import random
 
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, MessageHandler, CallbackQueryHandler
-import json
-import time
-import asyncio
-import random
-import math
-
+from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, CallbackQueryHandler
 
 from namepar import GainNamePar
 from secrets import TOKEN
 
+print("pot")
+
 massnamepar = GainNamePar()
-print(massnamepar)
+
 datacallback = 1
 count2 = 1
 keyboard = []
 message = ""
+print(massnamepar)
 for name in massnamepar:
     message += "(" + str(count2) + ") " + str(name[1]) + " - " + str(name[3]) + "\n"
     keyboard.append([
@@ -56,17 +56,16 @@ async def anek(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         num = random.randrange(len(p))
         await update.message.reply_text(f'{p[num]}')
 
-
 async def perekl(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user_id = update.message.from_user.id
     print(ID_TABLE["admin"], user_id)
     if(str(user_id) == str(ID_TABLE["admin"])):
-
         reply_markup = InlineKeyboardMarkup(keyboard)
-
         await update.message.reply_text(message, reply_markup=reply_markup)
     else:
-        await update.message.reply_text(f'У тебя нет прав на это действие')
+        test_list = [f'У тебя нет прав на это действие', f'Умный дохуя?', f'Пошел нахуй', f'У тебя нет прав нигер', f'У тебя никогда никаких прав не было, нет и не будет!', f'Ты еще не понял?', f'До тебя еще не дошло?']
+        answer = random.choice(test_list)
+        await update.message.reply_text(answer)
 
 
 
@@ -107,7 +106,7 @@ async def buttons(update, context):
             with open("bd_add_user.json", "w", encoding="utf-8") as f:
                 print(name_user)
                 f.write(name_user)
-    #                name_sorting = sorted([name] + query_text[2:])
+    #                name_sorting = sorted([name] + query_text[2:])  
     #                people = str(len(name_sorting))
     #                query_text = "\n".join([f"{message} ({people})\n"] + name_sorting)
     #                await query.edit_message_text(text=f"{query_text}", reply_markup=reply_markup)
@@ -157,7 +156,7 @@ async def buttons(update, context):
             from parser import checkPresent
             checkPresent()
             query_text = query.message.text
-            await query.edit_message_text(text=f"{query_text}\nОтметил🎉", reply_markup='')
+            await query.edit_message_text(text=f"{query_text}\nЖурнал заполнен", reply_markup='')
             students.clear()
             arr_fio_users.clear()
             callback_value.clear()
@@ -170,9 +169,7 @@ async def worker():
     while True:
         sleep_for = await queue.get()
         await asyncio.sleep(sleep_for)
-
         queue.task_done()
-
 
 async def update(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         print(context)
@@ -183,9 +180,7 @@ async def update(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         for task in tasks:
             task.cancel()
         await asyncio.gather(*tasks, return_exceptions=True)
-
         asyncio.wait_for(buttons(update, context))
-
 
 if __name__ == "__main__":
     app = ApplicationBuilder().token(TOKEN).build()

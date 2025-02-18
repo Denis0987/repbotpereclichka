@@ -24,4 +24,5 @@ def GainNamePar():
         for x in range(len(table_column)):
             string = re.sub("([\<]).*?([\>])", "\g<1>\g<2>", str(table_column[x]))
             sting.append(string.split("<>"))
+        print(sting)
     return (sting)
